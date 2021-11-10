@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <a class="logo">
+                        <svg width="36" height="36" class="logo__icon" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5 2.75C23.0967 2.75 23.669 2.98705 24.091 3.40901C24.5129 3.83097 24.75 4.40326 24.75 5V23C24.75 23.5967 24.5129 24.169 24.091 24.591C23.669 25.0129 23.0967 25.25 22.5 25.25H13.5C12.9033 25.25 12.331 25.0129 11.909 24.591C11.4871 24.169 11.25 23.5967 11.25 23V5C11.25 4.40326 11.4871 3.83097 11.909 3.40901C12.331 2.98705 12.9033 2.75 13.5 2.75H22.5ZM13.5 0.5C12.3065 0.5 11.1619 0.974106 10.318 1.81802C9.47411 2.66193 9 3.80653 9 5V23C9 24.1935 9.47411 25.3381 10.318 26.182C11.1619 27.0259 12.3065 27.5 13.5 27.5H22.5C23.6935 27.5 24.8381 27.0259 25.682 26.182C26.5259 25.3381 27 24.1935 27 23V5C27 3.80653 26.5259 2.66193 25.682 1.81802C24.8381 0.974106 23.6935 0.5 22.5 0.5H13.5Z" fill="#282828"/>
+                            <path d="M18 23C18.5968 23 19.1691 22.7629 19.591 22.341C20.013 21.919 20.25 21.3467 20.25 20.75C20.25 20.1533 20.013 19.581 19.591 19.159C19.1691 18.7371 18.5968 18.5 18 18.5C17.4033 18.5 16.831 18.7371 16.409 19.159C15.9871 19.581 15.75 20.1533 15.75 20.75C15.75 21.3467 15.9871 21.919 16.409 22.341C16.831 22.7629 17.4033 23 18 23ZM3.59777 5.1305C3.72839 5.19961 3.84412 5.29379 3.93834 5.40764C4.03256 5.52149 4.10342 5.65279 4.14688 5.79404C4.19035 5.93529 4.20555 6.08371 4.19163 6.23084C4.17771 6.37797 4.13495 6.52091 4.06577 6.6515C2.86932 8.9159 2.24589 11.439 2.25002 14C2.25002 16.655 2.90702 19.157 4.06577 21.3485C4.20541 21.6123 4.23455 21.9207 4.14678 22.2059C4.05901 22.4912 3.86153 22.7299 3.59777 22.8695C3.33401 23.0091 3.02559 23.0383 2.74034 22.9505C2.4551 22.8627 2.21641 22.6653 2.07677 22.4015C0.708822 19.8126 -0.00420198 16.9281 1.86287e-05 14C1.86287e-05 10.9692 0.751519 8.10725 2.07677 5.5985C2.14588 5.46787 2.24006 5.35215 2.35391 5.25793C2.46776 5.16371 2.59906 5.09284 2.74031 5.04938C2.88156 5.00592 3.02998 4.99072 3.17711 5.00463C3.32423 5.01855 3.46718 5.06132 3.59777 5.1305ZM32.4023 5.1305C32.5329 5.06132 32.6758 5.01855 32.8229 5.00463C32.9701 4.99072 33.1185 5.00592 33.2597 5.04938C33.401 5.09284 33.5323 5.16371 33.6461 5.25793C33.76 5.35215 33.8542 5.46787 33.9233 5.5985C35.2913 8.18735 36.0043 11.0719 36 14C36.0043 16.9281 35.2913 19.8126 33.9233 22.4015C33.7836 22.6653 33.5449 22.8627 33.2597 22.9505C32.9745 23.0383 32.666 23.0091 32.4023 22.8695C32.1385 22.7299 31.941 22.4912 31.8533 22.2059C31.7655 21.9207 31.7946 21.6123 31.9343 21.3485C33.1307 19.0841 33.7541 16.561 33.75 14C33.75 11.345 33.093 8.843 31.9343 6.6515C31.8651 6.52091 31.8223 6.37797 31.8084 6.23084C31.7945 6.08371 31.8097 5.93529 31.8532 5.79404C31.8966 5.65279 31.9675 5.52149 32.0617 5.40764C32.1559 5.29379 32.2716 5.19961 32.4023 5.1305ZM6.87827 8.4515C7.01601 8.50521 7.14182 8.58554 7.24849 8.6879C7.35517 8.79026 7.44062 8.91264 7.49997 9.04805C7.55932 9.18346 7.59139 9.32924 7.59436 9.47705C7.59733 9.62487 7.57113 9.77182 7.51727 9.9095C7.00863 11.2132 6.7484 12.6006 6.75002 14C6.75002 15.4445 7.02002 16.8237 7.51502 18.0905C7.5778 18.2296 7.61165 18.3799 7.6145 18.5325C7.61734 18.685 7.58913 18.8365 7.53158 18.9778C7.47402 19.1191 7.38833 19.2473 7.27971 19.3544C7.17108 19.4615 7.0418 19.5455 6.89973 19.6011C6.75765 19.6567 6.60575 19.6828 6.45326 19.6779C6.30077 19.6729 6.15087 19.637 6.0127 19.5723C5.87452 19.5076 5.75094 19.4155 5.64948 19.3016C5.54802 19.1876 5.4708 19.0542 5.42252 18.9095C4.81157 17.3448 4.49869 15.6797 4.50002 14C4.50002 12.2697 4.82627 10.6137 5.42252 9.0905C5.53101 8.81286 5.74525 8.58962 6.01819 8.46982C6.29113 8.35001 6.60047 8.34342 6.87827 8.4515ZM29.1218 8.4515C29.2595 8.39764 29.4064 8.37144 29.5542 8.37441C29.702 8.37738 29.8478 8.40945 29.9832 8.4688C30.1186 8.52814 30.241 8.6136 30.3434 8.72027C30.4457 8.82695 30.5261 8.95276 30.5798 9.0905C31.1738 10.6137 31.5 12.2697 31.5 14C31.5 15.7302 31.1738 17.3862 30.5775 18.9095C30.4588 19.1724 30.2437 19.3796 29.9766 19.4884C29.7095 19.5972 29.4107 19.5993 29.1422 19.4942C28.8736 19.389 28.6556 19.1848 28.5333 18.9235C28.411 18.6623 28.3937 18.3641 28.485 18.0905C28.98 16.8237 29.25 15.4445 29.25 14C29.25 12.5555 28.98 11.1762 28.485 9.9095C28.3761 9.63172 28.382 9.32205 28.5014 9.04862C28.6208 8.7752 28.844 8.5604 29.1218 8.4515Z" fill="#282828"/>
+                        </svg>
+                        <span class="logo__name">Звонили</span>
+                    </a>
+                    <div class="search">
+                        <input type="search" class="search__input" placeholder="Введите номер телефона">
+                        <svg width="24" height="24" class="search__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g o   pacity="0.5">
+                            <path d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 22L18 18" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="buttons">
+                        <a href="/" class="buttons__numbers">Коды номеров</a>
+                        <a href="/" class="buttons__input">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="main__wrap">
+                    <div class="main__left">
+                        <div class="info">
+                            <h2 class="title info__title">Кто звонил с незнакомого номера?</h2>
+                            <p class="info__desc">Часто на экране телефона появляются незнакомые номера. Чтобы быстро понять, кто вам звонил, с какого сотового оператора и из какого региона мы разработали данный сервис. Наш справочник содержит абонентов всех мобильных телефонов России.<br><br>Информация по каждому номеру включает в себя отзывы и комментарии реальных людей, получивших звонок от этого же абонента, что и вы.</p>
+                        </div>
+                        <div class="comments">
+                            <h4 class="ltitle comments__ltitle">Последнии комментраии к номерам:</h4>
+                            <div class="review">
+                                <div class="review__header">
+                                    <div class="review__left">
+                                        <div class="avatar">
+                                            <span class="avatar__name">П</span>
+                                        </div>
+                                        <span class="review__name">Пользователь</span>
+                                        <span class="review__date">17.02.2021 09:43</span>
+                                    </div>
+                                    <div class="review__right">
+                                        <div class="verified__left">
+                                            <span class="verified__category review__category">Номер:</span>
+                                            <span class="verified__num review__num">9924214826</span>
+                                        </div>
+                                        <div class="verified__right">
+                                            <div class="statistic">
+                                                <div class="statistic__item">
+                                                    <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                    </svg>
+                                                    <span class="statistic__name">23</span>
+                                                </div>
+                                                <div class="statistic__item">
+                                                    <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.8">
+                                                        <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                        <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                        </g>
+                                                    </svg>       
+                                                    <span class="statistic__name">111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__body-big">
+                                    <p class="review__info">Текст комментария Текст комментария Текст комментария Текст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментария Текст комментария</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__header">
+                                    <div class="review__left">
+                                        <div class="avatar">
+                                            <span class="avatar__name">П</span>
+                                        </div>
+                                        <span class="review__name">Пользователь</span>
+                                        <span class="review__date">17.02.2021 09:43</span>
+                                    </div>
+                                    <div class="review__right">
+                                        <div class="verified__left">
+                                            <span class="verified__category review__category">Номер:</span>
+                                            <span class="verified__num review__num">9924214826</span>
+                                        </div>
+                                        <div class="verified__right">
+                                            <div class="statistic">
+                                                <div class="statistic__item">
+                                                    <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                    </svg>
+                                                    <span class="statistic__name">23</span>
+                                                </div>
+                                                <div class="statistic__item">
+                                                    <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.8">
+                                                        <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                        <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                        </g>
+                                                    </svg>       
+                                                    <span class="statistic__name">111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <p class="review__info">Сбросили</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__header">
+                                    <div class="review__left">
+                                        <div class="avatar">
+                                            <span class="avatar__name">П</span>
+                                        </div>
+                                        <span class="review__name">Пользователь</span>
+                                        <span class="review__date">17.02.2021 09:43</span>
+                                    </div>
+                                    <div class="review__right">
+                                        <div class="verified__left">
+                                            <span class="verified__category review__category">Номер:</span>
+                                            <span class="verified__num review__num">9924214826</span>
+                                        </div>
+                                        <div class="verified__right">
+                                            <div class="statistic">
+                                                <div class="statistic__item">
+                                                    <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                    </svg>
+                                                    <span class="statistic__name">23</span>
+                                                </div>
+                                                <div class="statistic__item">
+                                                    <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.8">
+                                                        <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                        <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                        </g>
+                                                    </svg>       
+                                                    <span class="statistic__name">111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__body-big">
+                                    <p class="review__info">Текст комментария Текст комментария Текст комментария Текст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментария Текст комментария</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__header">
+                                    <div class="review__left">
+                                        <div class="avatar">
+                                            <span class="avatar__name">П</span>
+                                        </div>
+                                        <span class="review__name">Пользователь</span>
+                                        <span class="review__date">17.02.2021 09:43</span>
+                                    </div>
+                                    <div class="review__right">
+                                        <div class="verified__left">
+                                            <span class="verified__category review__category">Номер:</span>
+                                            <span class="verified__num review__num">9924214826</span>
+                                        </div>
+                                        <div class="verified__right">
+                                            <div class="statistic">
+                                                <div class="statistic__item">
+                                                    <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                    </svg>
+                                                    <span class="statistic__name">23</span>
+                                                </div>
+                                                <div class="statistic__item">
+                                                    <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.8">
+                                                        <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                        <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                        </g>
+                                                    </svg>       
+                                                    <span class="statistic__name">111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <p class="review__info">Сбросили</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__header">
+                                    <div class="review__left">
+                                        <div class="avatar">
+                                            <span class="avatar__name">П</span>
+                                        </div>
+                                        <span class="review__name">Пользователь</span>
+                                        <span class="review__date">17.02.2021 09:43</span>
+                                    </div>
+                                    <div class="review__right">
+                                        <div class="verified__left">
+                                            <span class="verified__category review__category">Номер:</span>
+                                            <span class="verified__num review__num">9924214826</span>
+                                        </div>
+                                        <div class="verified__right">
+                                            <div class="statistic">
+                                                <div class="statistic__item">
+                                                    <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                    </svg>
+                                                    <span class="statistic__name">23</span>
+                                                </div>
+                                                <div class="statistic__item">
+                                                    <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.8">
+                                                        <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                        <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                        </g>
+                                                    </svg>       
+                                                    <span class="statistic__name">111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__body-big">
+                                    <p class="review__info">Текст комментария Текст комментария Текст комментария Текст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментария Текст комментария</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__header">
+                                    <div class="review__left">
+                                        <div class="avatar">
+                                            <span class="avatar__name">П</span>
+                                        </div>
+                                        <span class="review__name">Пользователь</span>
+                                        <span class="review__date">17.02.2021 09:43</span>
+                                    </div>
+                                    <div class="review__right">
+                                        <div class="verified__left">
+                                            <span class="verified__category review__category">Номер:</span>
+                                            <span class="verified__num review__num">9924214826</span>
+                                        </div>
+                                        <div class="verified__right">
+                                            <div class="statistic">
+                                                <div class="statistic__item">
+                                                    <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                    </svg>
+                                                    <span class="statistic__name">23</span>
+                                                </div>
+                                                <div class="statistic__item">
+                                                    <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.8">
+                                                        <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                        <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                        </g>
+                                                    </svg>       
+                                                    <span class="statistic__name">111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <p class="review__info">Сбросили</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__header">
+                                    <div class="review__left">
+                                        <div class="avatar">
+                                            <span class="avatar__name">П</span>
+                                        </div>
+                                        <span class="review__name">Пользователь</span>
+                                        <span class="review__date">17.02.2021 09:43</span>
+                                    </div>
+                                    <div class="review__right">
+                                        <div class="verified__left">
+                                            <span class="verified__category review__category">Номер:</span>
+                                            <span class="verified__num review__num">9924214826</span>
+                                        </div>
+                                        <div class="verified__right">
+                                            <div class="statistic">
+                                                <div class="statistic__item">
+                                                    <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                    </svg>
+                                                    <span class="statistic__name">23</span>
+                                                </div>
+                                                <div class="statistic__item">
+                                                    <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.8">
+                                                        <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                        <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                        </g>
+                                                    </svg>       
+                                                    <span class="statistic__name">111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__body-big">
+                                    <p class="review__info">Текст комментария Текст комментария Текст комментария Текст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментарияТекст комментария Текст комментария</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__header">
+                                    <div class="review__left">
+                                        <div class="avatar">
+                                            <span class="avatar__name">П</span>
+                                        </div>
+                                        <span class="review__name">Пользователь</span>
+                                        <span class="review__date">17.02.2021 09:43</span>
+                                    </div>
+                                    <div class="review__right">
+                                        <div class="verified__left">
+                                            <span class="verified__category review__category">Номер:</span>
+                                            <span class="verified__num review__num">9924214826</span>
+                                        </div>
+                                        <div class="verified__right">
+                                            <div class="statistic">
+                                                <div class="statistic__item">
+                                                    <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                    </svg>
+                                                    <span class="statistic__name">23</span>
+                                                </div>
+                                                <div class="statistic__item">
+                                                    <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.8">
+                                                        <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                        <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                        </g>
+                                                    </svg>       
+                                                    <span class="statistic__name">111</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <p class="review__info">Сбросили</p>
+                                </div>
+                            </div>
+                            <a href="/" class="comments__more">Показать еще</a>
+                        </div>
+                    </div>
+                    <div class="main__right">
+                        <div class="verified">
+                            <h4 class="ltitle verified__ltitle">Последние проверенные телефоны:</h4>
+                            <div class="verified__list">
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="verified">
+                            <h4 class="ltitle verified__ltitle">Самые комментируемые:</h4>
+                            <div class="verified__list">
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="verified">
+                            <h4 class="ltitle verified__ltitle">Самые просматриваемые:</h4>
+                            <div class="verified__list">
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="verified__item">
+                                    <div class="verified__left">
+                                        <span class="verified__category">Номер:</span>
+                                        <span class="verified__num">9924214826</span>
+                                    </div>
+                                    <div class="verified__right">
+                                        <div class="statistic">
+                                            <div class="statistic__item">
+                                                <svg width="16" height="14" class="statistic__icon" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.00065 1.16669C2.79151 1.16669 1.00065 2.73369 1.00065 4.66669V7.00002C1.00065 7.14022 1.01007 7.2785 1.02839 7.4144C1.00993 7.46788 1 7.5246 1 7.58335V12.7317C1 13.2301 1.66808 13.499 2.10053 13.1746L5.13333 10.9C5.47953 10.6404 5.90059 10.5 6.33333 10.5H13.0007C15.2098 10.5 17.0007 8.93302 17.0007 7.00002V4.66669C17.0007 2.73369 15.2098 1.16669 13.0007 1.16669H5.00065Z" stroke="#282828" stroke-width="2"/>
+                                                </svg>
+                                                <span class="statistic__name">23</span>
+                                            </div>
+                                            <div class="statistic__item">
+                                                <svg width="15" height="14" class="statistic__icon" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8">
+                                                    <path d="M1.83436 7.73268C1.55522 7.2789 1.55521 6.72113 1.83435 6.26735C3.3031 3.87971 5.65236 2.33331 8.29987 2.33331C10.9474 2.33331 13.2966 3.87969 14.7654 6.2673C15.0445 6.72108 15.0445 7.27885 14.7654 7.73263C13.2966 10.1203 10.9474 11.6667 8.29985 11.6667C5.65236 11.6667 3.30311 10.1203 1.83436 7.73268Z" stroke="#282828" stroke-width="2"/>
+                                                    <ellipse cx="8.2998" cy="7" rx="1.875" ry="1.75" stroke="#282828" stroke-width="2"/>
+                                                    </g>
+                                                </svg>       
+                                                <span class="statistic__name">111</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="logo logo__footer">
+                        <svg width="36" height="36" class="logo__icon" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5 2.75C23.0967 2.75 23.669 2.98705 24.091 3.40901C24.5129 3.83097 24.75 4.40326 24.75 5V23C24.75 23.5967 24.5129 24.169 24.091 24.591C23.669 25.0129 23.0967 25.25 22.5 25.25H13.5C12.9033 25.25 12.331 25.0129 11.909 24.591C11.4871 24.169 11.25 23.5967 11.25 23V5C11.25 4.40326 11.4871 3.83097 11.909 3.40901C12.331 2.98705 12.9033 2.75 13.5 2.75H22.5ZM13.5 0.5C12.3065 0.5 11.1619 0.974106 10.318 1.81802C9.47411 2.66193 9 3.80653 9 5V23C9 24.1935 9.47411 25.3381 10.318 26.182C11.1619 27.0259 12.3065 27.5 13.5 27.5H22.5C23.6935 27.5 24.8381 27.0259 25.682 26.182C26.5259 25.3381 27 24.1935 27 23V5C27 3.80653 26.5259 2.66193 25.682 1.81802C24.8381 0.974106 23.6935 0.5 22.5 0.5H13.5Z" fill="#282828"/>
+                            <path d="M18 23C18.5968 23 19.1691 22.7629 19.591 22.341C20.013 21.919 20.25 21.3467 20.25 20.75C20.25 20.1533 20.013 19.581 19.591 19.159C19.1691 18.7371 18.5968 18.5 18 18.5C17.4033 18.5 16.831 18.7371 16.409 19.159C15.9871 19.581 15.75 20.1533 15.75 20.75C15.75 21.3467 15.9871 21.919 16.409 22.341C16.831 22.7629 17.4033 23 18 23ZM3.59777 5.1305C3.72839 5.19961 3.84412 5.29379 3.93834 5.40764C4.03256 5.52149 4.10342 5.65279 4.14688 5.79404C4.19035 5.93529 4.20555 6.08371 4.19163 6.23084C4.17771 6.37797 4.13495 6.52091 4.06577 6.6515C2.86932 8.9159 2.24589 11.439 2.25002 14C2.25002 16.655 2.90702 19.157 4.06577 21.3485C4.20541 21.6123 4.23455 21.9207 4.14678 22.2059C4.05901 22.4912 3.86153 22.7299 3.59777 22.8695C3.33401 23.0091 3.02559 23.0383 2.74034 22.9505C2.4551 22.8627 2.21641 22.6653 2.07677 22.4015C0.708822 19.8126 -0.00420198 16.9281 1.86287e-05 14C1.86287e-05 10.9692 0.751519 8.10725 2.07677 5.5985C2.14588 5.46787 2.24006 5.35215 2.35391 5.25793C2.46776 5.16371 2.59906 5.09284 2.74031 5.04938C2.88156 5.00592 3.02998 4.99072 3.17711 5.00463C3.32423 5.01855 3.46718 5.06132 3.59777 5.1305ZM32.4023 5.1305C32.5329 5.06132 32.6758 5.01855 32.8229 5.00463C32.9701 4.99072 33.1185 5.00592 33.2597 5.04938C33.401 5.09284 33.5323 5.16371 33.6461 5.25793C33.76 5.35215 33.8542 5.46787 33.9233 5.5985C35.2913 8.18735 36.0043 11.0719 36 14C36.0043 16.9281 35.2913 19.8126 33.9233 22.4015C33.7836 22.6653 33.5449 22.8627 33.2597 22.9505C32.9745 23.0383 32.666 23.0091 32.4023 22.8695C32.1385 22.7299 31.941 22.4912 31.8533 22.2059C31.7655 21.9207 31.7946 21.6123 31.9343 21.3485C33.1307 19.0841 33.7541 16.561 33.75 14C33.75 11.345 33.093 8.843 31.9343 6.6515C31.8651 6.52091 31.8223 6.37797 31.8084 6.23084C31.7945 6.08371 31.8097 5.93529 31.8532 5.79404C31.8966 5.65279 31.9675 5.52149 32.0617 5.40764C32.1559 5.29379 32.2716 5.19961 32.4023 5.1305ZM6.87827 8.4515C7.01601 8.50521 7.14182 8.58554 7.24849 8.6879C7.35517 8.79026 7.44062 8.91264 7.49997 9.04805C7.55932 9.18346 7.59139 9.32924 7.59436 9.47705C7.59733 9.62487 7.57113 9.77182 7.51727 9.9095C7.00863 11.2132 6.7484 12.6006 6.75002 14C6.75002 15.4445 7.02002 16.8237 7.51502 18.0905C7.5778 18.2296 7.61165 18.3799 7.6145 18.5325C7.61734 18.685 7.58913 18.8365 7.53158 18.9778C7.47402 19.1191 7.38833 19.2473 7.27971 19.3544C7.17108 19.4615 7.0418 19.5455 6.89973 19.6011C6.75765 19.6567 6.60575 19.6828 6.45326 19.6779C6.30077 19.6729 6.15087 19.637 6.0127 19.5723C5.87452 19.5076 5.75094 19.4155 5.64948 19.3016C5.54802 19.1876 5.4708 19.0542 5.42252 18.9095C4.81157 17.3448 4.49869 15.6797 4.50002 14C4.50002 12.2697 4.82627 10.6137 5.42252 9.0905C5.53101 8.81286 5.74525 8.58962 6.01819 8.46982C6.29113 8.35001 6.60047 8.34342 6.87827 8.4515ZM29.1218 8.4515C29.2595 8.39764 29.4064 8.37144 29.5542 8.37441C29.702 8.37738 29.8478 8.40945 29.9832 8.4688C30.1186 8.52814 30.241 8.6136 30.3434 8.72027C30.4457 8.82695 30.5261 8.95276 30.5798 9.0905C31.1738 10.6137 31.5 12.2697 31.5 14C31.5 15.7302 31.1738 17.3862 30.5775 18.9095C30.4588 19.1724 30.2437 19.3796 29.9766 19.4884C29.7095 19.5972 29.4107 19.5993 29.1422 19.4942C28.8736 19.389 28.6556 19.1848 28.5333 18.9235C28.411 18.6623 28.3937 18.3641 28.485 18.0905C28.98 16.8237 29.25 15.4445 29.25 14C29.25 12.5555 28.98 11.1762 28.485 9.9095C28.3761 9.63172 28.382 9.32205 28.5014 9.04862C28.6208 8.7752 28.844 8.5604 29.1218 8.4515Z" fill="#282828"/>
+                        </svg>
+                        <span class="logo__name">Звонили</span>
+                    </div>
+                    <a href="/" class="specification">Правила</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
